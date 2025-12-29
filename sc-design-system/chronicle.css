@@ -1,0 +1,28 @@
+/* ===========================
+   ShellChronicle Terminal UI
+   =========================== */
+
+.chronicle-terminal {
+  background: #0d1117;
+  border: 1px solid #1f2937;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  color: var(--accent);
+  box-shadow: var(--shadow-glow);
+  overflow-x: auto;
+}
+
+/* Neon Cursor */
+.chronicle-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background: var(--accent);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
